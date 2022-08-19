@@ -6,8 +6,8 @@ CREATE TABLE hamburguesa(
     precio VARCHAR(8),
     puntuacion VARCHAR(5),
     descripcion VARCHAR(25),
-    FOREING KEY (id) REFERENCES usuarios (id)
-    PRIMARY KEY (nombre_hamburguesa)
+    PRIMARY KEY (nombre_hamburguesa),
+    FOREIGN KEY (id) REFERENCES usuarios (id)
 );
 
 SELECT * FROM hamburguesa;

@@ -4,7 +4,7 @@ CREATE TABLE locales(
     hamburguesa VARCHAR(25),
     nota VARCHAR(5),
     direccion VARCHAR(25),
-    FOREING KEY (hamburguesa) REFERENCES hamburguesa (nombre_hamburguesa)
+    FOREIGN KEY (hamburguesa) REFERENCES hamburguesa (nombre_hamburguesa)
 );
 
 SELECT * FROM locales;
