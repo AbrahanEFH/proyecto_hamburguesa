@@ -1,0 +1,11 @@
+<h1> 🍔 </h1>
+<h1>Bienvenido {{nombre}}</h1>
+<h2>Sube tu critica culinaria</h2>
+
+<form action="/upload" method="POST" enctype="multipart/form-data" class="mt-4">
+  <input id="foto" type="file" name="foto"  />
+  <input name="nombre" value="{{nombre}}" type="hidden" />
+  <input name="email" value="{{email}}" type="hidden" />
+
+  <input class="btn bg-light" type="submit" value="¡Subir imagen!" />
+</form>

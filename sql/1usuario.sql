@@ -1,10 +1,12 @@
 -- Creamos la tabla usuarios
 CREATE TABLE usuarios (
     id SERIAL,
-    nombre VARCHAR(25),
-    apellido VARCHAR(25),
-    correo VARCHAR (35),
+    email varchar(50),
+    nombre varchar(50),
+    password varchar(50),
+    auth BOOLEAN,
     PRIMARY KEY (id)
 );
 
 SELECT * FROM usuarios;
+
