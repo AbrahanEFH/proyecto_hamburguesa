@@ -8,6 +8,7 @@ const pool =  new Pool({
     port: 5432,
 });
 
+//consultas a base de datos
 async function nuevoUsuario(email, nombre, password) {
     const result = await pool.query(
         `INSERT INTO usuarios (email, nombre, password, auth) values ('${email}', '${nombre}', '${password}', false) RETURNING *`
