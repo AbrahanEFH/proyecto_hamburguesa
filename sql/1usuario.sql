@@ -1,4 +1,5 @@
 -- Creamos la tabla usuarios
+--  incorporamos el auth
 CREATE TABLE usuarios (
     id SERIAL,
     email varchar(50),
