@@ -42,10 +42,12 @@ app.get('/', function (req, res) {
     res.render('home');
 })
 
+//Ruta de registro
 app.get('/registro', function (req, res) {
     res.render('Registro');
 })
 
+//ruta de usuario
 app.post('/usuarios', async (req, res) => {
     const { email, nombre, password } = req.body;
     try {
