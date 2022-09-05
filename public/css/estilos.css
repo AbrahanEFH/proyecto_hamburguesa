@@ -1,10 +1,11 @@
 body {
-    background:coral;
+    background: white;
     color: black;
 }
 
 nav {
-    background: brown;
+    background: white;
+    
 }
 
 #Destacados .imagen-top{
