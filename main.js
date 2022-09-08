@@ -1,6 +1,7 @@
 // Importaciones
 
 const express = require('express')
+
 const app = express()
 const exphbs = require('express-handlebars');
 const expressFileUpload = require('express-fileupload');
@@ -28,11 +29,14 @@ app.use(
 );
 
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+
+
 app.engine(
     'handlebars',
     exphbs.engine({
         defaultLayout: 'main',
         layoutsDir: `${__dirname}/views/mainLayout`,
+        partialsDir: `${__dirname}/views/partials`,
     })
 );
 app.set('view engine', 'handlebars');
